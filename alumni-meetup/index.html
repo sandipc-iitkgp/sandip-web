@@ -3,23 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>IIT KGP CSE Alumni Meetup, Bengaluru &middot; 9 October 2026</title>
-<meta name="description" content="Department of Computer Science and Engineering, IIT Kharagpur. Alumni meetup at Koramangala Club, Bengaluru, on Friday 9 October 2026, 5:00 PM to 10:00 PM.">
+<title>IIT KGP CSE/IT Alumni Meetup, Bengaluru &middot; 9 October 2026</title>
+<meta name="description" content="Department of Computer Science and Engineering, IIT Kharagpur. CSE/IT alumni meetup at Koramangala Club, Bengaluru, on Friday 9 October 2026, 5:00 PM onwards. Registration fee Rs 500 per person.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --navy: #013170;
-  --navy-deep: #011e46;
-  --navy-soft: #1b4b95;
-  --gold: #f7c617;
-  --gold-deep: #c99a00;
-  --ink: #16233a;
-  --ink-soft: #4a5a70;
-  --paper: #ffffff;
-  --mist: #eef2f8;
-  --rule: #d6dee9;
+  --navy: #013170; --navy-deep: #011e46; --gold: #f7c617; --gold-deep: #c99a00;
+  --ink: #16233a; --ink-soft: #4a5a70; --paper: #ffffff; --mist: #eef2f8; --rule: #d6dee9;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -27,125 +19,101 @@
 :root:not([data-theme="light"]) { color-scheme: light; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #ffffff; --mist: #eef2f8; --ink: #16233a; --ink-soft: #4a5a70; --rule: #d6dee9;
+    --paper:#fff; --mist:#eef2f8; --ink:#16233a; --ink-soft:#4a5a70; --rule:#d6dee9;
   }
 }
-:root[data-theme="dark"] {
-  --paper: #ffffff; --mist: #eef2f8; --ink: #16233a; --ink-soft: #4a5a70; --rule: #d6dee9;
-}
-html { scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px)); -webkit-text-size-adjust: 100%; }
+:root[data-theme="dark"] { --paper:#fff; --mist:#eef2f8; --ink:#16233a; --ink-soft:#4a5a70; --rule:#d6dee9; }
+html { scroll-padding-top: calc(80px + env(safe-area-inset-top, 0px)); -webkit-text-size-adjust: 100%; }
 *, *::before, *::after { box-sizing: inherit; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-}
-img { max-width: 100%; display: block; }
+body { margin:0; background: var(--paper); color: var(--ink);
+  font-family: "Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif; font-size:17px; line-height:1.6; }
+img { max-width:100%; display:block; }
 a { color: var(--navy); }
-a:focus-visible, button:focus-visible { outline: 3px solid var(--gold-deep); outline-offset: 3px; }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 22px; }
+a:focus-visible, button:focus-visible { outline:3px solid var(--gold-deep); outline-offset:3px; }
+.wrap { max-width:1120px; margin:0 auto; padding:0 22px; }
 
-/* ---- department identity strip ---- */
-.deptbar { background: var(--navy-deep); color: #fff; font-size: 14px; letter-spacing: .01em; }
-.deptbar .wrap { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; justify-content: space-between; padding-top: 9px; padding-bottom: 9px; }
-.deptbar a { color: #cfe0ff; text-decoration: none; }
-.deptbar a:hover { color: #fff; text-decoration: underline; }
+.deptbar { background: var(--navy-deep); color:#fff; font-size:14px; }
+.deptbar .wrap { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; justify-content:space-between; padding:9px 22px; }
+.deptbar a { color:#cfe0ff; text-decoration:none; }
+.deptbar a:hover { color:#fff; text-decoration:underline; }
 
-/* ---- hero ---- */
 .hero { background: var(--navy); }
-.hero img { width: 100%; height: auto; }
+.hero img { width:100%; height:auto; }
 
-/* ---- sticky facts bar ---- */
-.facts {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
-  background: var(--paper); border-bottom: 1px solid var(--rule);
-  box-shadow: 0 1px 0 rgba(1,49,112,.04);
-}
-.facts .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 34px; padding-top: 14px; padding-bottom: 14px; }
-.fact { display: flex; flex-direction: column; }
-.fact b { font-family: Archivo, sans-serif; font-weight: 700; font-size: 16px; color: var(--navy); line-height: 1.25; }
-.fact span { font-size: 14px; color: var(--ink-soft); }
-.facts .btn { margin-left: auto; }
-.btn {
-  display: inline-block; background: var(--gold); color: var(--navy-deep);
-  font-family: Archivo, sans-serif; font-weight: 700; font-size: 16px;
-  text-decoration: none; padding: 12px 26px; border-radius: 2px;
-  border-bottom: 3px solid var(--gold-deep);
-}
-.btn:hover { background: #ffd430; }
-.btn-ghost {
-  background: transparent; color: var(--navy); border: 2px solid var(--navy);
-  border-bottom-width: 2px; padding: 11px 24px;
-}
-.btn-ghost:hover { background: var(--navy); color: #fff; }
+.facts { position:sticky; top: env(safe-area-inset-top, 0px); z-index:20;
+  background: var(--paper); border-bottom:1px solid var(--rule); }
+.facts .wrap { display:flex; flex-wrap:wrap; align-items:center; gap:10px 30px; padding-top:13px; padding-bottom:13px; }
+.fact { display:flex; flex-direction:column; }
+.fact b { font-family:Archivo,sans-serif; font-weight:700; font-size:16px; color:var(--navy); line-height:1.25; }
+.fact span { font-size:14px; color:var(--ink-soft); }
+.facts .btn { margin-left:auto; }
+.btn { display:inline-block; background:var(--gold); color:var(--navy-deep);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:16px; text-decoration:none;
+  padding:12px 26px; border-radius:2px; border-bottom:3px solid var(--gold-deep); }
+.btn:hover { background:#ffd430; }
+.btn-ghost { background:transparent; color:var(--navy); border:2px solid var(--navy); padding:11px 24px; }
+.btn-ghost:hover { background:var(--navy); color:#fff; }
 
-/* ---- sections ---- */
-section { padding: 58px 0; }
+section { padding:56px 0; }
 section.tinted { background: var(--mist); }
-h2 {
-  font-family: Archivo, sans-serif; font-weight: 800; font-size: clamp(26px, 3.4vw, 36px);
-  color: var(--navy); margin: 0 0 8px; letter-spacing: -.01em;
+h2 { font-family:Archivo,sans-serif; font-weight:800; font-size:clamp(26px,3.4vw,36px);
+  color:var(--navy); margin:0 0 8px; letter-spacing:-.01em; }
+.lede { color:var(--ink-soft); margin:0 0 32px; max-width:64ch; font-size:18px; }
+h3 { font-family:Archivo,sans-serif; font-weight:700; font-size:19px; color:var(--navy); margin:0 0 6px; }
+
+.sched { display:grid; grid-template-columns:repeat(3,1fr); border-top:3px solid var(--gold); }
+.slot { padding:20px 22px 22px 0; border-right:1px solid var(--rule); }
+.slot:last-child { border-right:0; }
+.slot:not(:first-child) { padding-left:22px; }
+.slot time { font-family:Archivo,sans-serif; font-weight:700; color:var(--navy); font-size:17px; display:block; }
+.slot p { margin:4px 0 0; color:var(--ink-soft); }
+.slot small { display:block; margin-top:4px; color:var(--ink-soft); font-size:14px; }
+.blocks { margin-top:30px; max-width:72ch; color:var(--ink-soft); }
+
+.cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:36px 56px; }
+ul.plain { margin:0; padding-left:20px; }
+ul.plain li { margin-bottom:10px; }
+ul.plain li::marker { color:var(--gold-deep); }
+ul.plain b { color:var(--ink); }
+
+.people { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:30px; text-align:center; }
+.people img { width:148px; height:148px; border-radius:50%; margin:0 auto 14px;
+  border:4px solid var(--gold); object-fit:cover; }
+.people b { font-family:Archivo,sans-serif; font-size:18px; color:var(--navy); display:block; }
+.people span { font-size:15px; color:var(--ink-soft); }
+
+.register { background:var(--navy); color:#fff; }
+.register h2 { color:#fff; }
+.register .lede { color:#c9d8ef; }
+.reglayout { display:grid; grid-template-columns:1.45fr 1fr; gap:44px; align-items:start; }
+.register a.btn-ghost { color:#fff; border-color:rgba(255,255,255,.55); }
+.register a.btn-ghost:hover { background:#fff; color:var(--navy); border-color:#fff; }
+.actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:22px; }
+.fee { border-left:3px solid var(--gold); padding:2px 0 2px 18px; margin:0 0 22px; }
+.fee div { display:flex; justify-content:space-between; gap:20px; max-width:420px; padding:5px 0; }
+.fee div + div { border-top:1px solid rgba(255,255,255,.18); }
+.fee b { font-family:Archivo,sans-serif; color:var(--gold); white-space:nowrap; }
+.upi { background:rgba(255,255,255,.08); padding:16px 20px; border-radius:3px; margin-top:24px; }
+.upi code { font-size:16px; color:var(--gold); word-break:break-all; }
+.flyercard { text-align:center; }
+.flyercard img { width:100%; max-width:290px; margin:0 auto 12px; border:6px solid #fff; }
+.flyercard a { color:var(--gold); font-weight:700; }
+.fineprint { margin-top:22px; font-size:15px; color:#a9c0e2; }
+.fineprint a { color:#dbe7f8; }
+
+footer { background:var(--navy-deep); color:#b9cbe6; font-size:15px; padding:26px 0; }
+footer .wrap { display:flex; flex-wrap:wrap; gap:8px 30px; justify-content:space-between; }
+footer a { color:#fff; }
+
+@media (max-width:760px) {
+  .sched { grid-template-columns:1fr; }
+  .slot { border-right:0; border-bottom:1px solid var(--rule); padding-left:0 !important; }
+  .slot:last-child { border-bottom:0; }
+  .reglayout { grid-template-columns:1fr; }
+  .facts .btn { margin-left:0; width:100%; text-align:center; }
+  section { padding:44px 0; }
 }
-.lede { color: var(--ink-soft); margin: 0 0 34px; max-width: 62ch; font-size: 18px; }
-h3 { font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px; color: var(--navy); margin: 0 0 6px; }
-
-/* ---- schedule (a genuine sequence, so it is drawn as one) ---- */
-.sched { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 3px solid var(--gold); }
-.slot { padding: 20px 22px 22px 0; border-right: 1px solid var(--rule); padding-right: 22px; }
-.slot:last-child { border-right: 0; }
-.slot:not(:first-child) { padding-left: 22px; }
-.slot time { font-family: Archivo, sans-serif; font-weight: 700; color: var(--navy); font-size: 17px; display: block; }
-.slot p { margin: 4px 0 0; color: var(--ink-soft); }
-
-/* ---- programme ---- */
-.prog { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 30px 40px; }
-.prog > div { border-left: 3px solid var(--gold); padding-left: 18px; }
-.prog .claim { font-weight: 700; color: var(--ink); margin: 0 0 6px; }
-.prog p { margin: 0; color: var(--ink-soft); }
-
-/* ---- two columns ---- */
-.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px 56px; }
-ul.plain { margin: 0; padding-left: 20px; }
-ul.plain li { margin-bottom: 9px; }
-ul.plain li::marker { color: var(--gold-deep); }
-
-/* ---- speakers ---- */
-.people { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 30px; text-align: center; }
-.people img { width: 148px; height: 148px; border-radius: 50%; margin: 0 auto 14px; border: 4px solid var(--gold); object-fit: cover; }
-.people b { font-family: Archivo, sans-serif; font-size: 18px; color: var(--navy); display: block; }
-.people span { font-size: 15px; color: var(--ink-soft); }
-
-/* ---- register ---- */
-.register { background: var(--navy); color: #fff; }
-.register h2 { color: #fff; }
-.register .lede { color: #c9d8ef; }
-.reglayout { display: grid; grid-template-columns: 1.45fr 1fr; gap: 44px; align-items: center; }
-.register a.btn-ghost { color: #fff; border-color: rgba(255,255,255,.55); }
-.register a.btn-ghost:hover { background: #fff; color: var(--navy); border-color: #fff; }
-.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
-.flyercard { text-align: center; }
-.flyercard img { width: 100%; max-width: 300px; margin: 0 auto 12px; border: 6px solid #fff; }
-.flyercard a { color: var(--gold); font-weight: 700; }
-.fineprint { margin-top: 22px; font-size: 15px; color: #a9c0e2; }
-.fineprint a { color: #dbe7f8; }
-
-/* ---- footer ---- */
-footer { background: var(--navy-deep); color: #b9cbe6; font-size: 15px; padding: 26px 0; }
-footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 30px; justify-content: space-between; }
-footer a { color: #fff; }
-
-@media (max-width: 760px) {
-  .sched { grid-template-columns: 1fr; }
-  .slot { border-right: 0; border-bottom: 1px solid var(--rule); padding-left: 0 !important; }
-  .slot:last-child { border-bottom: 0; }
-  .reglayout { grid-template-columns: 1fr; }
-  .facts .btn { margin-left: 0; width: 100%; text-align: center; }
-  section { padding: 44px 0; }
-}
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { * { transition:none !important; animation:none !important; } }
 </style>
 </head>
 <body>
@@ -163,97 +131,75 @@ footer a { color: #fff; }
 
 <div class="facts">
   <div class="wrap">
-    <div class="fact"><b>Friday, 9 October 2026</b><span>5:00 PM to 10:00 PM</span></div>
+    <div class="fact"><b>Friday, 9 October 2026</b><span>5:00 PM onwards</span></div>
     <div class="fact"><b>Koramangala Club</b><span>Hall No. 201, Bengaluru</span></div>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScLuAk9EyPnIuDFoBXN7nK25wtx74JD0Hl73yzJfIC3vp1NbA/viewform" target="_blank" rel="noopener">Register</a>
+    <div class="fact"><b>Rs 500 per person</b><span>Rs 1,000 with a guest</span></div>
+    <a class="btn" href="#register">Register</a>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2>An evening for the CSE family in Bengaluru</h2>
-    <p class="lede">Faculty from the department are coming to Bengaluru to meet alumni and the people building
-    what comes next. Come to hear what CSE at IIT Kharagpur is working on now, say what you think it should
-    be working on, and find a concrete way to be part of it.</p>
+    <h2>An evening for CSE and IT alumni in Bengaluru</h2>
+    <p class="lede">Faculty from the department are coming to Bengaluru to meet alumni and the people
+    building what comes next. Come to hear what CSE at IIT Kharagpur is working on now, say what you think
+    it should be working on, and find a concrete way to be part of it.</p>
 
     <div class="sched">
       <div class="slot">
         <time>5:00 &ndash; 6:00 PM</time>
-        <p>Arrival and registration</p>
+        <p>Registration and high tea</p>
       </div>
       <div class="slot">
         <time>6:00 &ndash; 8:00 PM</time>
-        <p>Talks, panels and pledging</p>
+        <p>Talks, panels, startup ecosystem launch and the pledging ceremony</p>
       </div>
       <div class="slot">
-        <time>8:00 &ndash; 10:00 PM</time>
-        <p>Posters, networking and dinner</p>
+        <time>8:00 PM onwards</time>
+        <p>Poster session, themed networking and dinner</p>
+        <small>Liquor available at a cash bar.</small>
       </div>
     </div>
+
+    <p class="blocks">The evening runs across two blocks. The first is talks and panels: the department's
+    direction, alumni and faculty voices, a panel on where computing and CSE at KGP are headed, the launch of
+    the startup ecosystem, and a pledging ceremony. The second is networking: a technical poster session,
+    themed zones matched to what you are looking for, and dinner served throughout.</p>
   </div>
 </section>
 
 <section class="tinted">
   <div class="wrap">
-    <h2>What is in store</h2>
-    <p class="lede">Inspiring talks, meaningful conversations, real impact.</p>
-    <div class="prog">
+    <div class="cols">
       <div>
-        <h3>Department talk</h3>
-        <p class="claim">What CSE, IIT KGP is building and where alumni can help.</p>
-        <p>A look at what the department is building, what makes it distinctive, and where alumni can contribute.</p>
+        <h2>What to expect</h2>
+        <ul class="plain">
+          <li>A room full of IIT KGP CSE and IT alumni now working across top product companies, startups and research roles in Bengaluru.</li>
+          <li>Real, unfiltered career stories, not LinkedIn highlight reels.</li>
+          <li>A candid department talk on what CSE KGP is building.</li>
+          <li>A panel on hard industry problems worth academic attention, and where the industry is headed.</li>
+          <li>Seven to eight faculty members introducing themselves and their work.</li>
+          <li>A technical poster session showing what current students are building.</li>
+          <li>Purposeful, themed networking matched to your own interests, not generic small talk.</li>
+          <li>Good food, good conversation, zero corporate stiffness.</li>
+        </ul>
       </div>
       <div>
-        <h3>Alumni and faculty voices</h3>
-        <p class="claim">Real journeys. Specific opportunities.</p>
-        <p>Alumni career journeys alongside faculty perspectives and openings to engage.</p>
-      </div>
-      <div>
-        <h3>Panel discussions</h3>
-        <p class="claim">Industry. Research. The future of computing.</p>
-        <p>Industry challenges that deserve academic attention, alongside where computing is headed and what the department should build for it.</p>
-      </div>
-      <div>
-        <h3>Technical posters and pledging</h3>
-        <p class="claim">See the research. Make your commitment.</p>
-        <p>Research projects on display, with opportunities to mentor, invest, or guide the work.</p>
-      </div>
-      <div>
-        <h3>Themed networking and dinner</h3>
-        <p class="claim">Connect around what you are looking for.</p>
-        <p>Research and industry collaboration, mentoring, startups and investment, hackathons and upskilling, and dinner.</p>
+        <h2>Why come</h2>
+        <ul class="plain">
+          <li><b>Networking.</b> Build and refresh your circle of IIT KGP alumni in Bengaluru's tech industry.</li>
+          <li><b>Give back.</b> Mentor current students, guide undergraduate research, or answer a faculty member's specific ask.</li>
+          <li><b>Get in early on the startup ecosystem.</b> Invest, mentor, or incubate ventures.</li>
+          <li><b>Shape direction.</b> Weigh in during the panel on where computing and CSE at KGP should go next.</li>
+          <li><b>See the department's progress firsthand,</b> through the technical poster session.</li>
+          <li><b>Just for fun.</b> An evening with people who share the same campus memories.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h2>Who can register</h2>
-        <ul class="plain">
-          <li>Any IIT KGP alumnus, from any batch and any department, currently working in CSE, IT or a related computing field.</li>
-          <li>Especially relevant if you are looking to give back, mentor students, support research, or engage with the startup ecosystem.</li>
-          <li>One guest each, to be confirmed. A spouse or partner is welcome.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Why come</h2>
-        <ul class="plain">
-          <li>Reconnect with campus peers now driving tech in Bengaluru.</li>
-          <li>Support department research and undergraduate projects.</li>
-          <li>Take part in professional upskilling and hackathons.</li>
-          <li>Help shape the design of the Microcredit Course on AI Innovation.</li>
-          <li>Get a front row seat to the department's progress, as a facilitator and a friend.</li>
-          <li>Spend an evening with people who share the same campus memories.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="tinted">
   <div class="wrap">
     <h2>Voices from the department</h2>
     <p class="lede">Speaking on the evening.</p>
@@ -281,12 +227,26 @@ footer a { color: #fff; }
   <div class="wrap reglayout">
     <div>
       <h2>Register</h2>
-      <p class="lede">Registration is free and takes a minute. Please register in advance so we can plan
-      seating and dinner.</p>
+      <p class="lede">Open to any IIT KGP alumnus, from any batch and any department, working in CSE, IT or a
+      related computing field. You may bring one guest.</p>
+
+      <div class="fee">
+        <div><span>Alumnus</span><b>Rs 500</b></div>
+        <div><span>Alumnus with one guest</span><b>Rs 1,000</b></div>
+      </div>
+
+      <p>Pay using the QR code or the UPI ID given in the registration form, then upload the transaction
+      details in the form to complete your registration.</p>
+
+      <div class="upi">
+        UPI ID<br><code>technologyalumniassociationbangalore@sbi</code>
+      </div>
+
       <div class="actions">
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScLuAk9EyPnIuDFoBXN7nK25wtx74JD0Hl73yzJfIC3vp1NbA/viewform" target="_blank" rel="noopener">Register now</a>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScLuAk9EyPnIuDFoBXN7nK25wtx74JD0Hl73yzJfIC3vp1NbA/viewform" target="_blank" rel="noopener">Open the registration form</a>
         <a class="btn btn-ghost" href="assets/alumni-meetup-bengaluru-flyer.pdf" download="IIT-KGP-CSE-Alumni-Meetup-Bengaluru.pdf">Download the flyer</a>
       </div>
+
       <p class="fineprint">Questions? Write to
       <a href="mailto:alumni-connect@cse.iitkgp.ac.in">alumni-connect@cse.iitkgp.ac.in</a></p>
     </div>

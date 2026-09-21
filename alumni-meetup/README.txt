@@ -1,5 +1,5 @@
-IIT KGP CSE Alumni Meetup, Bengaluru - one page site
-=====================================================
+IIT KGP CSE/IT Alumni Meetup, Bengaluru - one page site
+========================================================
 
 Files
 -----
@@ -21,18 +21,21 @@ and it will be served at
 Keep index.html and the assets folder together. All paths inside
 index.html are relative, so the folder can sit anywhere.
 
-If the department server has no outbound access for webfonts, the two
-<link> tags to fonts.googleapis.com in <head> can be deleted. The page
-then falls back to the system sans-serif and still renders correctly.
+If the server has no outbound access for webfonts, delete the two
+<link> tags to fonts.googleapis.com in <head>. The page then falls
+back to the system sans-serif and still renders correctly.
 
-Things to update before publishing
-----------------------------------
-1. Registration link: search index.html for "docs.google.com" and
-   replace if the form URL changes. It appears twice.
-2. "Microcredit Course on AI Innovation" - please confirm whether this
-   should read "Microcredential".
-3. Confirm the spelling and designation of Anand Deshpande.
-4. After the event, the simplest change is to replace the two Register
-   buttons with a line of text saying the meetup has concluded.
+Things to check before publishing
+---------------------------------
+1. The flyer PDF in assets/ is the older version. It does not mention
+   the Rs 500 fee, and its agenda wording differs from the page.
+   Replace it with an updated flyer, or remove the two download links
+   in the Register section.
+2. Registration link: search index.html for "docs.google.com".
+   It appears once.
+3. UPI ID on the page: technologyalumniassociationbangalore@sbi
+4. Confirm the spelling and designation of Anand Deshpande.
+5. After the event, replace the Register button with a line saying
+   the meetup has concluded.
 
 Contact address used on the page: alumni-connect@cse.iitkgp.ac.in
